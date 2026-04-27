@@ -23,7 +23,7 @@ class Perception(Node):
         current_pose.pose = msg.pose.pose
 
         # log position
-        self.get_logger().info(f'publishing position: x={current_pose.position.x:.2f}, y={current_pose.position.y:.2f}, z={current_pose.position.z}')
+        self.get_logger().info(f'publishing position: x={current_pose.pose.position.x:.2f}, y={current_pose.pose.position.y:.2f}, z={current_pose.pose.position.z}')
 
         # Publish the extracted pose
         self.publisher.publish(current_pose)
