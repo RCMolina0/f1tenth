@@ -1,4 +1,4 @@
 **TODO:** \
-[ ] control node \
-[ ] local planning \
+[x] control node \
+[x] local planning \
 [x] localization node
