@@ -12,6 +12,7 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        ('share/' + package_name + '/config', ['config/sensors.yaml']),
         ('share/' + package_name + '/launch', ['launch/slam_launch.py']),
         
         # Required to compile your map, config, and launch folders
